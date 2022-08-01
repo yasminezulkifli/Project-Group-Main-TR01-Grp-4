@@ -10,7 +10,10 @@ url =f"https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_cu
 
 function = "CURRENCY_EXCHANGE_RATE"
 from_currency = "USD"
-to_currency = "SGD"
+to_currency = "SGD" 
+"""
+required
+"""
 
 response = requests.get(url)
 print(response)
