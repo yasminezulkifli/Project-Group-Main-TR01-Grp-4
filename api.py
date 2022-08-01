@@ -8,13 +8,14 @@ import json
 api_key = "VW2YB37U2F0K0NDE"
 url =f"https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=SGD&apikey={api_key}"
 
+function = "CURRENCY_EXCHANGE_RATE"
+from_currency = "USD"
+to_currency = "SGD"
 
 response = requests.get(url)
 print(response)
 print(response.json())
 exchange_rate = response.json()
 
-def: Currency_Exchange_Rate
-def: from_sybol = USD 
-def: to_symbol = SGD 
+
 
