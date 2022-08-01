@@ -14,9 +14,7 @@ from_currency = "USD"
 to_currency = "SGD"
 
 to_currency = "SGD" 
-"""
-required
-"""
+
 
 response = requests.get(url)
 print(response)
