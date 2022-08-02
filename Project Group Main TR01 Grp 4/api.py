@@ -8,18 +8,30 @@ import json
 api_key = "VW2YB37U2F0K0NDE"
 url =f"https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=SGD&apikey={api_key}"
 
-function = "CURRENCY_EXCHANGE_RATE"
-from_currency = "USD"
+def api_function():
+    function = "CURRENCY_EXCHANGE_RATE"
+    from_currency = "USD"
+    to_currency = "SGD"
+    response = requests.get(url)
+    exchange_rate = -1
+    
+     #to check if the response is good to go
+     if response.status_code == 200: 
+        data = response.json()
 
-to_currency = "SGD"
+        for key, value in data['Realtime Currency Excahne Rate'].items():
+            if "Exchange Rate" in key: 
+                exchange_rate = value 
 
-to_currency = "SGD" 
+    else: 
+        print("There is an error with your request.")
+
+api_function() 
 
 
-response = requests.get(url)
-print(response)
-print(response.json())
-exchange_rate = response.json()
+
+
+
 
 
 
