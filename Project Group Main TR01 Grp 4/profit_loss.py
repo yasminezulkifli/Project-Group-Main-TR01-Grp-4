@@ -1,5 +1,5 @@
 def calculate_profit_and_lost(pl_dict_in_list): 
-    current_netprofit_value = 0 #sublist
+    current_netprofit_value = 0 
     pl_dip_list = list() #creating list object 
 
     for variable in pl_dict_in_list:
@@ -9,7 +9,7 @@ def calculate_profit_and_lost(pl_dict_in_list):
         else: 
             diff_btw_days = float(current_netprofit_value) - float(variable['Net Profit'])
             # computing the diff in the net profit btw each day 
-            pl_dip_list.append({variable['"Day"']: diff_btw_days})
+            pl_dip_list.append({variable['"Day"']: diff_btw_days}) #from nested list
             current_netprofit_value = float(variable['Net Profit'])
 
     print("PROFIT LOST DIP RESULTS; [USD]:")
@@ -19,4 +19,4 @@ def calculate_profit_and_lost(pl_dict_in_list):
 
     return pl_dip_list
 
-
+print (pl_dict_in_list)
