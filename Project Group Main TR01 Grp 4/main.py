@@ -111,7 +111,8 @@ print("EMPTY STATE OF LIST pl_dip_list: {0}".format(pl_empty_flag))
 
 # Output all data to txt file
 print("Output to text file")
-output_txt(json_response["Realtime Currency Exchange Rate"]["5. Exchange Rate"],
+with open("summary_report.txt","w") as file: #CREATE TXT
+     file.write(json_response["Realtime Currency Exchange Rate"]["5. Exchange Rate"],
            maxPricedItem_usd["Category"],
            maxPricedItem_sgd,
            coh_empty_flag,
