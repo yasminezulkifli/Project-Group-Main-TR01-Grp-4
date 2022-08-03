@@ -16,7 +16,7 @@ def api_function():
     exchange_rate = -1
     
      #to check if the response is good to go
-     if response.status_code == 200: 
+    if response.status_code == 200: 
         data = response.json()
 
         for key, value in data['Realtime Currency Excahne Rate'].items():
