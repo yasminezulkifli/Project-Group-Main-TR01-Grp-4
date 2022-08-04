@@ -8,13 +8,12 @@ category_dict = {}
 #To remove headers category and overheads from raw data
 is_header = True
 
-#Visual Studio Code application requires path of CSV file to be specified
 #Path of CSV file
-path = "C:/Users/Miko Lee/OneDrive - Ngee Ann Polytechnic/Year 1/PFB/"
+path = yasminezulkifli/Project-Group-Main-TR01-Grp-4/Project-Group-Main-TR01-Grp-4/CSV_REPORTS
 #To open CSV file
 datafile = open(path + "overheads-day-90.csv", 'r')
 
-#For loops to remove headers category and overheads from raw data
+#Run for loops to remove headers category and overheads from raw data
 for line in datafile:
     if is_header:
         is_header = False
