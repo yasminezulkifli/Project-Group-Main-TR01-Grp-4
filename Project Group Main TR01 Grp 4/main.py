@@ -43,7 +43,6 @@ def output_txt(forex, highest_overhead_cat, highest_overhead, coh_empty_flag, co
                             str("{:.0f}".format(value)) + "\n")
 
 
-
 print("MAIN EXECUTE")
 
 # Get FOREX
