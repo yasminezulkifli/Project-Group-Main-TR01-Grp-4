@@ -1,4 +1,4 @@
- #imports each python file as modules 
+#imports each python file as modules 
 import api, cash_on_hand, overheads, profit_loss, csv_reader
 
 name_list_array = ["cash-on-hand-usd.csv", "overheads-day-90.csv", "profit-and-loss-usd.csv"]
